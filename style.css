@@ -25,6 +25,14 @@ body {
     background-size: cover;
     padding: 10rem 0 0;
     max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    transition: transform 500ms ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-content {
@@ -52,6 +60,10 @@ body {
     background: var(--clr-accent-400);
 }
 
+.card-body {
+    color: rgb(255, 255, 255 / 0.85);
+}
+
 .button {
     cursor: pointer;
     display: inline;
@@ -59,6 +71,7 @@ body {
     color: var(--clr-neutral-900);
     background-color: var(--clr-accent-400);
     padding: 0.5em 1.25em;
+    border-radius: .25em;
 }
 
 .button:hover,
